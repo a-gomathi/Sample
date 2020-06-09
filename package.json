@@ -1,0 +1,21 @@
+{
+  "name": "github_webhooks",
+  "version": "1.0.0",
+  "description": "Webhook for github",
+  "main": "webhooks.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "Sample"
+  },
+  "author": "Gomathi",
+  "license": "ISC",
+  "dependencies": {
+    "@octokit/webhooks": "^7.6.3",
+    "child-process": "^1.0.2",
+    "crypto": "^1.0.1",
+    "http": "0.0.1-security"
+  }
+}

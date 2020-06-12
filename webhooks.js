@@ -4,7 +4,7 @@ const webhooks = new Webhooks({
 });
 
 webhooks.on("*", ({ id, name, payload }) => {
-  console.log(name, "event received");
+  console.log("\nid -------- \t" + id + "\tname --------\t" + name + "\t& payload ---------\t" + JSON.stringify(payload));
 });
 
 require("http").createServer(webhooks.middleware).listen(80);

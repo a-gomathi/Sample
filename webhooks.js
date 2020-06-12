@@ -8,4 +8,3 @@ webhooks.on("*", ({ id, name, payload }) => {
 });
 
 require("http").createServer(webhooks.middleware).listen(80);
-// can now receive webhook events at port 80

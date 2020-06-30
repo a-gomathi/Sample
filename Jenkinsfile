@@ -9,10 +9,10 @@ pipeline {
                 echo 'Building..'
                 script {
                     if (server == "IBM")
-                    prodName = $IBM
+                    prodName = ${IBM}
 
                     else
-                    prodName = $HCL
+                    prodName = ${HCL}
 
                     fi
                 }

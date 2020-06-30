@@ -9,10 +9,10 @@ pipeline {
                 echo 'Building..'
                 script {
                     if (server == "IBM")
-                    prodName = ${IBM}
+                    prodName = process.env.IBM
 
                     else
-                    prodName = ${HCL}
+                    prodName = process.env.HCL
 
                     fi
                 }

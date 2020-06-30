@@ -1,8 +1,2 @@
-const PRODUCT_NAME = ''
-
-if (server === 'IBM') {
-    PRODUCT_NAME = $IBM
-} else {
-    PRODUCT_NAME = $HCL
-}
+const PRODUCT_NAME = server
 console.log(PRODUCT_NAME)

@@ -1,4 +1,3 @@
-const prod = ''
 const PRODUCT_NAME = ''
 
 if (server === 'IBM') {

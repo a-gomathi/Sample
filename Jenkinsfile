@@ -10,10 +10,10 @@ pipeline {
                 script {
                     echo server
                     if (server == "IBM")
-                    prodName = ${env.IBM}
+                    prodName = 'UCV'
 
                     else
-                    prodName = ${env.HCL}
+                    prodName = 'Accelerate'
 
                     fi
                 }

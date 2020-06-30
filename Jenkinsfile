@@ -16,8 +16,11 @@ pipeline {
                     }
                     echo prodName
                     def inptext = readFile file: "test.js" 
-                    inptext = inptext.replaceAll("SERVER", prodName)
-                    writeFile file: "sample.js", text: inptext
+                    inptext = inptext.replaceAll("PRODUCT", prodName)
+                    writeFile file: "test.js", text: ""
+                    writeFile file: "test.js", text: inptext
+                    def output = readFile file: "test.js"
+                    echo output
                 }
             }
         }

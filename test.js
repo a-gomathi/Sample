@@ -1,2 +1,2 @@
-const PRODUCT_NAME = server
+const PRODUCT_NAME = SERVER
 console.log(PRODUCT_NAME)

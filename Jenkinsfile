@@ -8,7 +8,7 @@ pipeline {
             steps {
                 echo 'Building..'
                 script {
-                    if [[server == "IBM"]]; then
+                    if (server == "IBM")
                     prodName = $IBM
 
                     else

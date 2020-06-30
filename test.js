@@ -62,7 +62,7 @@ export default {
   taskDefinitions: [],
   eventTriggers: [],
   qualityHandlers: [],
-  displayName: 'HCL Compass',
+  displayName: 'Compass',
   pluginId: 'ucv-ext-compass',
-  description: 'HCL Compass plug-in imports and synchronizes issues from a Compass server as issues in the PRODUCT server'
+  description: 'Compass plug-in imports and synchronizes issues from a Compass server as issues in the PRODUCT server'
 }

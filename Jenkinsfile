@@ -16,7 +16,7 @@ pipeline {
                     }
                     echo prodName
                     def inptext = readFile file: "test.js" 
-                    inptext = inptext.replaceAll(~/-{SERVER}-/, prodName)
+                    inptext = inptext.replaceAll("SERVER", prodName)
                     writeFile file: "sample.js", text: inptext
                 }
             }

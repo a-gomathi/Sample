@@ -8,11 +8,12 @@ pipeline {
             steps {
                 echo 'Building..'
                 script {
+                    echo server
                     if (server == "IBM")
-                    prodName = process.env.IBM
+                    prodName = ${env.IBM}
 
                     else
-                    prodName = process.env.HCL
+                    prodName = ${env.HCL}
 
                     fi
                 }

@@ -11,11 +11,8 @@ pipeline {
                     echo server
                     if (server == "IBM")
                     prodName = 'UCV'
-
                     else
                     prodName = 'Accelerate'
-
-                    fi
                 }
                 variableReplace(
                     configs: [

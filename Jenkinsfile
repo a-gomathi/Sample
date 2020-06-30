@@ -9,26 +9,16 @@ pipeline {
                 echo 'Building..'
                 script {
                     echo server
-                    if (server == "IBM")
-                    prodName = 'UCV'
-                    else
-                    prodName = 'Accelerate'
+                    if (server == "IBM") {
+                        prodName = 'UCV'
+                    } else {
+                        prodName = 'Accelerate'
+                    }
+                    echo prodName
+                    def inptext = readFile file: "test.js" 
+                    inptext = inptext.replaceAll(~/-{SERVER}-/, prodName)
+                    writeFile file: "sample.js", text: inptext
                 }
-                variableReplace(
-                    configs: [
-                        variablesReplaceConfig(
-                            configs: [
-                                variablesReplaceItemConfig( 
-                                    name: 'SERVER',
-                                    value: prodName
-                                )
-                            ],
-                            fileEncoding: 'UTF-8', 
-                            filePath: 'test.js', 
-                            variablesPrefix: '', 
-                            variablesSuffix: ''
-                            )]
-                )
             }
         }
     }

@@ -2,7 +2,7 @@ export default {
   properties: [
     {
       label: 'PRODUCT User Access Key',
-      name: 'ucvAccessKey',
+      name: 'userAccessKey',
       type: 'Secure',
       description: 'The user access key to authenticate with the PRODUCT server',
       required: true

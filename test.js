@@ -10,7 +10,7 @@ export default {
     {
       name: 'serverUrl',
       label: 'URL',
-      description: 'The URL of the Compass server',
+      description: 'The URL of the HCL Compass server',
       required: true,
       type: 'String'
     },
@@ -18,7 +18,7 @@ export default {
       name: 'userName',
       label: 'Username',
       type: 'String',
-      description: 'The user name to authenticate with the Compass server',
+      description: 'The user name to authenticate with the HCL Compass server',
       required: true
     },
     {

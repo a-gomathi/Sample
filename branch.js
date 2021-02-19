@@ -1,1 +1,2 @@
 Testing
+echo "${dockerPassword}"

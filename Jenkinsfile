@@ -10,10 +10,13 @@ pipeline {
     }
 
     stages {
+        stage('Checkout Source') {
+            checkout scm
+        }
         stage('Build') { 
             steps {
                 git (
-                    url: 'git@github.com:gomsOrg/Node.git',
+                    url: 'https://github.com/gomsOrg/Node.git',
                     credentialsId: 'MyGitHub',
                     branch: 'master'
                 )

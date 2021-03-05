@@ -12,7 +12,12 @@ pipeline {
     stages {
         stage('Build') { 
             steps {
-                sh 'node branch.js' 
+                git (
+                    url: 'git@github.com:gomsOrg/Node.git',
+                    credentialsId: 'MyGitHub',
+                    branch: 'master'
+                )
+                sh 'node index.js' 
             }
         }
     }

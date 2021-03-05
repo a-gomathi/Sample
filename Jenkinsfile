@@ -6,7 +6,7 @@ pipeline {
     }
 
     environment {
-            myPassword = credentials('${myPassword}')
+            myPassword = credentials('myPassword')
     }
 
     stages {

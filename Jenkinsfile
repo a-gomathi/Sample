@@ -17,7 +17,6 @@ pipeline {
                     credentialsId: 'MyGitHub',
                     branch: 'master'
                 )
-                sh "git checkout -b origin/master"
                 sh 'node index.js' 
             }
         }

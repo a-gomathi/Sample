@@ -1,5 +1,5 @@
-const envOne = process.env.USERNAME;
-const envTwo = process.env.PASSWORD;
+const envOne = process.env.MYGITHUB.USERNAME;
+const envTwo = process.env.MYGITHUB;
 
 console.log("envOne: " + envOne);
 console.log("envTwo: " + envTwo);

@@ -7,6 +7,7 @@ pipeline {
 
     environment {
             myPassword = credentials('myPassword')
+            mygithub = credentials('MyGitHub')
     }
 
     stages {

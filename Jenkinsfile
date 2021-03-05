@@ -6,12 +6,7 @@ pipeline {
     }
 
     environment {
-        withCredentials([
-            usernamePassword(credentialsId: 'MyGitHub', usernameVariable: 'MyGitHub_USER', passwordVariable: 'MyGitHub_PASSWORD')
-        ]){
-            USERNAME = ${MyGitHub_USER}
-            PASSWORD = ${MyGitHub_PASSWORD}
-        }
+            MYGITHUB = credentials('MyGitHub')
     }
 
     stages {

@@ -1,6 +1,6 @@
 const user = 'gomathia'
-console.log("process.env.MyGitHub \t: " + process.env.MyGitHub);
-console.log("process.env.MyGitHub \t: " + process.env.MyGitHub.Username);
+console.log("process.env.mygithub \t: " + process.env.mygithub);
+console.log("process.env.mygithub \t: " + process.env.mygithub.Username);
 console.log("process.env.myPassword \t: " + process.env.myPassword);
 
 const options = {

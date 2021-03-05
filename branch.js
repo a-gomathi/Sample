@@ -1,5 +1,5 @@
-const envOne = process.env.VARIABLE_1;
-const envTwo = process.env.VARIABLE_2;
+const envOne = process.env.USERNAME;
+const envTwo = process.env.PASSWORD;
 
 console.log("envOne: " + envOne);
 console.log("envTwo: " + envTwo);

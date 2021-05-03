@@ -13,11 +13,11 @@ pipeline {
         stage('Build') { 
             steps {
                 git (
-                    url: 'https://github.com/gomsOrg/Node.git',
+                    url: 'https://github.com/a-gomathi/Docker.git',
                     credentialsId: 'MyGitHub',
-                    branch: 'master'
+                    branch: 'main'
                 )
-                sh 'node index.js' 
+                sh 'node test.js' 
             }
         }
     }

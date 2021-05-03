@@ -6,14 +6,18 @@ pipeline {
     }
 
     environment {
-        VARIABLE_1="10"
-        VARIABLE_2="7"
+            Docker = credentials('Docker')
     }
 
     stages {
         stage('Build') { 
             steps {
-                sh 'node branch.js' 
+                git (
+                    url: 'https://github.com/gomsOrg/Node.git',
+                    credentialsId: 'MyGitHub',
+                    branch: 'master'
+                )
+                sh 'node index.js' 
             }
         }
     }

@@ -15,7 +15,7 @@ pipeline {
                 git (
                     url: 'https://github.com/a-gomathi/Docker.git',
                     credentialsId: 'MyGitHub',
-                    branch: 'master'
+                    branch: 'main'
                 )
                 sh 'node test.js' 
             }

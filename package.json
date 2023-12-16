@@ -13,7 +13,7 @@
   "author": "Gomathi",
   "license": "ISC",
   "dependencies": {
-    "@octokit/webhooks": "^7.6.3",
+    "@octokit/webhooks": "^9.26.3",
     "child-process": "^1.0.2",
     "crypto": "^1.0.1",
     "http": "0.0.1-security"
